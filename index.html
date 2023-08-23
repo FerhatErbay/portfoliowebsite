@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FE Portfolie Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d0ffe7777b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/MijnLogo.png" alt="logo" class="logo" />
+          <ul id="menuside">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeBarMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openBarMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Ontwikkelaar/Computer Leraar</p>
+          <h1>
+            Hi, Ik ben <span>Ferhat E.</span><br />
+            Uit Nederland
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------ ABOUT----- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/fer_pas_fotoY.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+              ab impedit sit molestiae iusto labore ratione? Eum maiores porro
+              illo, adipisci enim facilis quo consequatur deleniti, aliquam
+              dolorem, iste dolores. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Rem, non perferendis iste praesentium impedit
+              aperiam unde quae rerum iure fugit aut vitae reprehenderit tempore
+              sequi modi, inventore obcaecati itaque nisi.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML/CSS</span><br />
+                  <span>Bootstrap/TailwindCSS </span> - Basic Level
+                </li>
+                <li>
+                  <span>Javascript</span> <br />
+                  <span>React.js</span><br />
+                  Designing Web
+                </li>
+
+                <li><span>C# </span>- Basic Level<br /></li>
+                <li><span>SQL/PostgreSQL</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Tussen 2011-2016</span><br />Na het afronden van mijn
+                  universitaire opleiding in 2011 bleef ik tot 2016 vrijwillig
+                  lesgeven aan leerlingen van het basis- en voortgezet onderwijs
+                  in verschillende vrijwilligersorganisaties.
+                </li>
+                <li>
+                  <span>Tussen 2007-2011</span><br />Tussen 2007-2011, inclusief
+                  mijn universitaire jaren, heb ik vrijwillig les gegeven aan
+                  leerlingen van het basis- en voortgezet onderwijs.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2007-2011 </span><br />Universiteit - Gazi Universiteit
+                  Onderwijs Faculteit Industriele Kunsten - Computer Leraar
+                </li>
+                <li>
+                  <span>2004-2007</span><br />Universiteit- TOBB Universiteit
+                  voor Economie en Technologie-Computer Engineering - Opmerking:
+                  ik stopte met school voordat ik afstudeerde van deze
+                  opleiding.
+                </li>
+                <li>
+                  <span>1995-2002</span><br />Middelbareschool - Sorgun
+                  Anatolische middelbare school
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----SKILLS----- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Mijn skills</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i
+            ><i class="fab fa-js-square"></i>
+
+            <i class="fab fa-react"></i>
+            <h2>HTML/CSS</h2>
+            <h2>Bootstrap/TailwindCSS</h2>
+            <h2>Javascript/React.js</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              dolore vitae expedita sapiente velit eius cumque ad repellendus
+              quae quam. Mollitia commodi, dolore quis doloribus unde
+              exercitationem consequuntur molestiae minima!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>C#</h2>
+            <h2>Java-Basic Level</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              dolore vitae expedita sapiente velit eius cumque ad repellendus
+              quae quam. Mollitia commodi, dolore quis doloribus unde
+              exercitationem consequuntur molestiae minima!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-database"></i>
+            <h2>SQL/PostgreSQL</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+              dolore vitae expedita sapiente velit eius cumque ad repellendus
+              quae quam. Mollitia commodi, dolore quis doloribus unde
+              exercitationem consequuntur molestiae minima!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----PORTFOLIO------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/mijn-werk-1.png" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                facere perferendis provident libero quisquam fuga in soluta
+                aliquid modi labore.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/mijn-werk-4.png" />
+            <div class="layer">
+              <h3>Product Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                facere perferendis provident libero quisquam fuga in soluta
+                aliquid modi labore.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/mijn-werk-5.png" />
+            <div class="layer">
+              <h3>Auto Rent App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                facere perferendis provident libero quisquam fuga in soluta
+                aliquid modi labore.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more...</a>
+      </div>
+    </div>
+    <!-- ----CONTACT----- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i> amor.fati291708@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+31 6 8454 7031</p>
+            <div class="contact-social-icons">
+              <a href="#"> <i class="fab fa-facebook"></i> </a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/ferhat-erbay-856b0a206/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/AMORFATIFERHATERBAY" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Ferhat_Erbay_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <span id="form-msg">Hello</span>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your name..."
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your mail..."
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message..."
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Ferhat</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function openTab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var menuside = document.getElementById("menuside");
+      function openBarMenu() {
+        menuside.style.right = "0";
+      }
+
+      function closeBarMenu() {
+        menuside.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbznXceXpU8cFOVpM3hKw-m5qxnqwSVXl2zL3Xsk3jivLlRCIV3n5E5eKO42f5PzYuqn/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("form-msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message sent successfully!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
