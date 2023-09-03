@@ -68,9 +68,35 @@ nav ul li a:hover::after {
   margin-top: 20%;
   font-size: 30px;
 }
-.header-text h1 {
-  font-size: 60px;
+.header-text .text {
+  position: absolute;
+  font-size: 200%;
   margin-top: 20px;
+  border-right: 4px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.animation1 {
+  animation: typewriter 4s steps(34) 1s infinite both,
+    blinkCursor 700ms steps(34) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 440px;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .header-text h1 span {
@@ -242,7 +268,11 @@ nav ul li a:hover::after {
   font-weight: 500;
 }
 
-.layer a {
+.layer p a {
+  color: #fff;
+}
+
+.layer .layer-btn {
   font-size: 18px;
   margin-top: 20px;
   text-decoration: none;
@@ -371,6 +401,14 @@ nav .fas {
   }
   .header-text h1 {
     font-size: 30px;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 240px;
+    }
   }
 
   nav .fas {

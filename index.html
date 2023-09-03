@@ -24,19 +24,19 @@
           <img src="images/MijnLogo.png" alt="logo" class="logo" />
           <ul id="menuside">
             <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Over mij</a></li>
             <li><a href="#services">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closeBarMenu()"></i>
           </ul>
+
           <i class="fas fa-bars" onclick="openBarMenu()"></i>
         </nav>
         <div class="header-text">
           <p>Software Ontwikkelaar/Computer Leraar</p>
-          <h1>
-            Hi, Ik ben <span>Ferhat E.</span><br />
-            Uit Nederland
+          <h1 class="text animation1">
+            Hi, Ik ben <span>Ferhat E.</span> Uit Nederland.
           </h1>
         </div>
       </div>
@@ -46,18 +46,20 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/fer_pas_fotoY.png" alt="" />
+            <img src="images/Mijn_Foto.jpeg" alt="" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
+            <h1 class="sub-title">Over mij</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-              ab impedit sit molestiae iusto labore ratione? Eum maiores porro
-              illo, adipisci enim facilis quo consequatur deleniti, aliquam
-              dolorem, iste dolores. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Rem, non perferendis iste praesentium impedit
-              aperiam unde quae rerum iure fugit aut vitae reprehenderit tempore
-              sequi modi, inventore obcaecati itaque nisi.
+              Ik ben gepassioneerd door nieuwe technologieën en blijf graag op
+              de hoogte van de laatste ontwikkelingen in de ICT-wereld. Ik
+              probeerde me aan te passen aan de snel veranderende technologische
+              omgeving en mijn leerlingen les te geven in overeenstemming met
+              het curriculum van onze school. Ook heb ik als vrijwilliger
+              programmeerlessen gegeven en kinderen begeleid en dat doe ik nog
+              steeds. Daarnaast ben ik een geduldig en sociaal persoon, een
+              echte teamspeler die zich gemakkelijk aanpast aan anderen en
+              evenementen graag met humor benadert.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="openTab('skills')">
@@ -66,13 +68,13 @@
               <p class="tab-links" onclick="openTab('experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab('education')">Opleiding</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>HTML/CSS</span><br />
-                  <span>Bootstrap/TailwindCSS </span> - Basic Level
+                  <span>HTML</span><br />
+                  <span>CSS/Bootstrap/TailwindCSS </span>
                 </li>
                 <li>
                   <span>Javascript</span> <br />
@@ -80,8 +82,8 @@
                   Designing Web
                 </li>
 
-                <li><span>C# </span>- Basic Level<br /></li>
-                <li><span>SQL/PostgreSQL</span></li>
+                <li><span>C# </span><br /></li>
+                <li><span>SQL/PostgreSQL/MongoDB</span></li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -124,7 +126,7 @@
     <!-- -----SKILLS----- -->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">My skills</h1>
+        <h1 class="sub-title">Mijn skills</h1>
         <div class="skills-list">
           <div>
             <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i
@@ -140,7 +142,7 @@
               quae quam. Mollitia commodi, dolore quis doloribus unde
               exercitationem consequuntur molestiae minima!
             </p>
-            <a href="#">Learn more</a>
+            <a href="#">Meer over</a>
           </div>
           <div>
             <i class="fas fa-code"></i>
@@ -152,7 +154,7 @@
               quae quam. Mollitia commodi, dolore quis doloribus unde
               exercitationem consequuntur molestiae minima!
             </p>
-            <a href="#">Learn more</a>
+            <a href="#">Meer over</a>
           </div>
           <div>
             <i class="fas fa-database"></i>
@@ -163,7 +165,7 @@
               quae quam. Mollitia commodi, dolore quis doloribus unde
               exercitationem consequuntur molestiae minima!
             </p>
-            <a href="#">Learn more</a>
+            <a href="#">Meer over</a>
           </div>
         </div>
       </div>
@@ -171,14 +173,17 @@
     <!-- ----PORTFOLIO------ -->
     <div id="portfolio">
       <div class="container">
-        <h2 class="sub-title">My work</h2>
+        <h2 class="sub-title">Mijn werk</h2>
         <div class="work-list">
           <div class="work">
             <img src="images/mijnportfolio.png" />
             <div class="layer">
               <h3>Portfolio Website</h3>
-              <p>My own responsive portfolio website.</p>
-              <a href="https://ferhatportfolio.netlify.app/" target="_blank"
+              <p>Mijn eige responsive portfolio website.</p>
+              <a
+                href="https://ferhatportfolio.netlify.app/"
+                class="layer-btn"
+                target="_blank"
                 ><i class="fas fa-external-link-alt"></i
               ></a>
             </div>
@@ -189,11 +194,16 @@
               <h3>Manage Employee</h3>
               <p>
                 React crud training project.
-                <a href="https://github.com/AMORFATIFERHATERBAY/react-crud-app">
+                <a
+                  href="https://github.com/AMORFATIFERHATERBAY/react-crud-app"
+                  target="_blank"
+                >
                   GITHUB link</a
                 >
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="layer-btn"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
           <div class="work">
@@ -203,7 +213,10 @@
               <p>
                 Mini Quiz web application using HTML CSS and pure Javascript!
               </p>
-              <a href="https://mijnquizapp.netlify.app/" target="_blank"
+              <a
+                href="https://mijnquizapp.netlify.app/"
+                class="layer-btn"
+                target="_blank"
                 ><i class="fas fa-external-link-alt"></i
               ></a>
             </div>
@@ -233,7 +246,10 @@
                 ><i class="fab fa-github"></i
               ></a>
             </div>
-            <a href="images/Ferhat_Erbay_CV.pdf" download class="btn btn2"
+            <a
+              href="images/Ferhat_Erbay_CV_Resume.pdf"
+              download
+              class="btn btn2"
               >Download CV</a
             >
           </div>
@@ -310,6 +326,7 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script> -->
+
     <script src="script.js"></script>
     <script src="form.js"></script>
   </body>
