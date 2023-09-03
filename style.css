@@ -242,7 +242,11 @@ nav ul li a:hover::after {
   font-weight: 500;
 }
 
-.layer a {
+.layer p a {
+  color: #fff;
+}
+
+.layer .layer-btn {
   font-size: 18px;
   margin-top: 20px;
   text-decoration: none;
