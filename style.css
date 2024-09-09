@@ -86,7 +86,7 @@ nav ul li a:hover::after {
     width: 0;
   }
   to {
-    width: 540px;
+    width: 740px;
   }
 }
 
@@ -407,7 +407,7 @@ nav .fas {
       width: 0;
     }
     to {
-      width: 240px;
+      width: 340px;
     }
   }
 
